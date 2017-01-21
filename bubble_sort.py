@@ -7,11 +7,12 @@ def swap(i,j,list):
 
 def bubble_sort(list):
 	last = len(list)
-
-	for i in range(last):
-		for j in range(i+1,last):
-			if (list[i] > list[j]):
-				swap(i,j,list)
-				swapped = True
+	sorted = False
+	while not sorted:
+		sorted = True
+		for i in range(last-1):
+			if (list[i] > list[i+1]):
+				swap(i,i+1,list)
+				sorted = False
 
 	return list
