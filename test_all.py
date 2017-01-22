@@ -5,8 +5,7 @@ import binary_search as bs
 import bubble_sort as bbs
 import insertion_sort as ins
 import quick_sort as qs
-
-
+import simple_stack as ss
 
 def test_linear_search():
 	assert ls.linear_search([2,3,4], 3) == True
@@ -32,3 +31,11 @@ def test_quick_sort():
 	assert qs.quick_sort([1,2,3,4,5]) == [1,2,3,4,5]
 	assert qs.quick_sort([4,3,6,1,9,2,8]) == [1, 2, 3, 4, 6, 8, 9]
 	assert qs.quick_sort([1,6,4,3,7,6,5]) == [1,3,4,5,6,6,7]
+
+
+def test_simple_stack():
+	ss.push("a")
+	ss.push("x")
+	assert ss.peek() == "x"
+	assert ss.pop() == "x"
+	assert ss.peek() == "a"
