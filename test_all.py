@@ -6,6 +6,8 @@ import bubble_sort as bbs
 import insertion_sort as ins
 import quick_sort as qs
 import simple_stack as ss
+import permutations as p
+
 
 def test_linear_search():
 	assert ls.linear_search([2,3,4], 3) == True
@@ -39,3 +41,8 @@ def test_simple_stack():
 	assert ss.peek() == "x"
 	assert ss.pop() == "x"
 	assert ss.peek() == "a"
+
+
+def test_permutations():
+	result = [[1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]
+	assert p.get_permutations([1,2,3]) == result
