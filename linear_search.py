@@ -1,4 +1,4 @@
-def linear_search (arr, query):
+def linear_search(arr, query):
 	found = False
 	for index, num in enumerate(arr):
 		if (num == query):
@@ -7,7 +7,7 @@ def linear_search (arr, query):
 			break
 
 	if not found:
-		print "Not found\narr: " 
+		print "Not found\narr: "
 		print arr
 	return found
 
