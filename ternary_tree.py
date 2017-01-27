@@ -41,7 +41,7 @@ class TernaryTree(object):
 	def insert(self, data):
 		""" Insert a new node at it's appropriate location in the search tree. """
 		node = Node(data)
-		if self.root == None:
+		if self.root is None:
 			self.root = node
 		else:
 			self.__insert_it(self.root, node)
